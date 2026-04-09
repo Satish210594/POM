@@ -1,0 +1,33 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: dataDrivenTest.spec.js >> Data Driven Test for undefined and KKHHYY
+- Location: tests/dataDrivenTest.spec.js:12:5
+
+# Error details
+
+```
+Error: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/webkit-2272/pw_run.sh --inspector-pipe --headless --no-startup-window --start-maximized
+<launched> pid=7029
+[pid=7029][err] Cannot parse arguments: Unknown option --start-maximized
+Call log:
+  - <launching> /home/runner/.cache/ms-playwright/webkit-2272/pw_run.sh --inspector-pipe --headless --no-startup-window --start-maximized
+  - <launched> pid=7029
+  - [pid=7029][err] Cannot parse arguments: Unknown option --start-maximized
+  - [pid=7029] <gracefully close start>
+  - [pid=7029] <kill>
+  - [pid=7029] <will force kill>
+  - [pid=7029] <process did exit: exitCode=1, signal=null>
+  - [pid=7029] starting temporary directories cleanup
+  - [pid=7029] finished temporary directories cleanup
+  - [pid=7029] <gracefully close end>
+
+```
